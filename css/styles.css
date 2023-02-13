@@ -1,3 +1,274 @@
-.header {
-  padding: 100%;
+/* poppins-regular - latin */
+@font-face {
+  font-display: swap;
+  /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/poppins-v20-latin-regular.eot");
+  /* IE9 Compat Modes */
+  src: url("../fonts/poppins-v20-latin-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/poppins-v20-latin-regular.woff2") format("woff2"), url("../fonts/poppins-v20-latin-regular.woff") format("woff"), url("../fonts/poppins-v20-latin-regular.ttf") format("truetype"), url("../fonts/poppins-v20-latin-regular.svg#Poppins") format("svg");
+  /* Legacy iOS */
+}
+/* poppins-600 - latin */
+@font-face {
+  font-display: swap;
+  /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  src: url("../fonts/poppins-v20-latin-600.eot");
+  /* IE9 Compat Modes */
+  src: url("../fonts/poppins-v20-latin-600.eot?#iefix") format("embedded-opentype"), url("../fonts/poppins-v20-latin-600.woff2") format("woff2"), url("../fonts/poppins-v20-latin-600.woff") format("woff"), url("../fonts/poppins-v20-latin-600.ttf") format("truetype"), url("../fonts/poppins-v20-latin-600.svg#Poppins") format("svg");
+  /* Legacy iOS */
+}
+/* poppins-700 - latin */
+@font-face {
+  font-display: swap;
+  /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/poppins-v20-latin-700.eot");
+  /* IE9 Compat Modes */
+  src: url("../fonts/poppins-v20-latin-700.eot?#iefix") format("embedded-opentype"), url("../fonts/poppins-v20-latin-700.woff2") format("woff2"), url("../fonts/poppins-v20-latin-700.woff") format("woff"), url("../fonts/poppins-v20-latin-700.ttf") format("truetype"), url("../fonts/poppins-v20-latin-700.svg#Poppins") format("svg");
+  /* Legacy iOS */
+}
+/* inter-regular - latin */
+@font-face {
+  font-display: swap;
+  /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/inter-v12-latin-regular.eot");
+  /* IE9 Compat Modes */
+  src: url("../fonts/inter-v12-latin-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/inter-v12-latin-regular.woff2") format("woff2"), url("../fonts/inter-v12-latin-regular.woff") format("woff"), url("../fonts/inter-v12-latin-regular.ttf") format("truetype"), url("../fonts/inter-v12-latin-regular.svg#Inter") format("svg");
+  /* Legacy iOS */
+}
+/* inter-500 - latin */
+@font-face {
+  font-display: swap;
+  /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  src: url("../fonts/inter-v12-latin-500.eot");
+  /* IE9 Compat Modes */
+  src: url("../fonts/inter-v12-latin-500.eot?#iefix") format("embedded-opentype"), url("../fonts/inter-v12-latin-500.woff2") format("woff2"), url("../fonts/inter-v12-latin-500.woff") format("woff"), url("../fonts/inter-v12-latin-500.ttf") format("truetype"), url("../fonts/inter-v12-latin-500.svg#Inter") format("svg");
+  /* Legacy iOS */
+}
+/* inter-600 - latin */
+@font-face {
+  font-display: swap;
+  /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  src: url("../fonts/inter-v12-latin-600.eot");
+  /* IE9 Compat Modes */
+  src: url("../fonts/inter-v12-latin-600.eot?#iefix") format("embedded-opentype"), url("../fonts/inter-v12-latin-600.woff2") format("woff2"), url("../fonts/inter-v12-latin-600.woff") format("woff"), url("../fonts/inter-v12-latin-600.ttf") format("truetype"), url("../fonts/inter-v12-latin-600.svg#Inter") format("svg");
+  /* Legacy iOS */
+}
+/* inter-700 - latin */
+@font-face {
+  font-display: swap;
+  /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/inter-v12-latin-700.eot");
+  /* IE9 Compat Modes */
+  src: url("../fonts/inter-v12-latin-700.eot?#iefix") format("embedded-opentype"), url("../fonts/inter-v12-latin-700.woff2") format("woff2"), url("../fonts/inter-v12-latin-700.woff") format("woff"), url("../fonts/inter-v12-latin-700.ttf") format("truetype"), url("../fonts/inter-v12-latin-700.svg#Inter") format("svg");
+  /* Legacy iOS */
+}
+/* lekton-regular - latin */
+@font-face {
+  font-display: swap;
+  /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Lekton";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/lekton-v17-latin-regular.eot");
+  /* IE9 Compat Modes */
+  src: url("../fonts/lekton-v17-latin-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/lekton-v17-latin-regular.woff2") format("woff2"), url("../fonts/lekton-v17-latin-regular.woff") format("woff"), url("../fonts/lekton-v17-latin-regular.ttf") format("truetype"), url("../fonts/lekton-v17-latin-regular.svg#Lekton") format("svg");
+  /* Legacy iOS */
+}
+/* lekton-700 - latin */
+@font-face {
+  font-display: swap;
+  /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Lekton";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/lekton-v17-latin-700.eot");
+  /* IE9 Compat Modes */
+  src: url("../fonts/lekton-v17-latin-700.eot?#iefix") format("embedded-opentype"), url("../fonts/lekton-v17-latin-700.woff2") format("woff2"), url("../fonts/lekton-v17-latin-700.woff") format("woff"), url("../fonts/lekton-v17-latin-700.ttf") format("truetype"), url("../fonts/lekton-v17-latin-700.svg#Lekton") format("svg");
+  /* Legacy iOS */
+}
+.hero {
+  padding-top: 25px;
+  position: relative;
+  height: 480px;
+  background-image: url(../images/hero-background.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.hero__content {
+  padding-top: 96px;
+}
+.hero__content-body {
+  position: relative;
+  max-width: 1154px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+.hero__desc {
+  position: relative;
+  max-width: 569px;
+  width: 100%;
+  bottom: -215px;
+}
+.hero__title {
+  font-family: "Poppins", sans-serif;
+  font-weight: var(--fw-700);
+  font-size: var(--text-94);
+  line-height: var(--lh-108);
+  color: var(--gray-1000);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-image: linear-gradient(96.46deg, #C87C00 3.72%, #8B3208 31.05%, rgba(83, 32, 15, 0.82) 68.54%, #010420 100%);
+  margin-bottom: 20px;
+}
+.hero__text {
+  max-width: 490px;
+  width: 100%;
+  font-family: "Inter", sans-serif;
+  font-weight: var(--fw-400);
+  font-size: var(--text-16);
+  line-height: var(--lh-30);
+  color: var(--gray-800);
+  margin-bottom: 40px;
+}
+.hero__btn-arrow {
+  width: 16px;
+  height: 16px;
+  margin-left: 16px;
+}
+.hero__user-cards {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.hero__user-card {
+  position: relative;
+  max-width: 188px;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.2);
+  -webkit-backdrop-filter: blur(40px);
+          backdrop-filter: blur(40px);
+  border-radius: 8px;
+  padding: 31px 16px 17px;
+}
+.hero__user-img {
+  position: absolute;
+  right: -20px;
+  top: -15px;
+}
+.hero__user-card-title {
+  font-family: "Inter", sans-serif;
+  font-weight: var(--fw-600);
+  font-size: var(--text-20);
+  line-height: var(--lh-25);
+  text-align: center;
+  color: var(--white);
+  margin-bottom: 27px;
+}
+.hero__user-content {
+  max-width: 155px;
+  width: 100%;
+  background: var(--white);
+  border-radius: 8px;
+  padding: 17px 0px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.hero__user-content-title {
+  font-family: "Inter", sans-serif;
+  font-weight: var(--fw-500);
+  font-size: var(--text-14);
+  line-height: var(--lh-17);
+  color: var(--brown-300);
+  margin-bottom: 5px;
+}
+.hero__user-content-amount {
+  font-family: "Inter", sans-serif;
+  font-weight: var(--fw-700);
+  font-size: var(--text-30);
+  line-height: var(--lh-36);
+  color: var(--red-300);
+}
+
+.header__inner {
+  max-width: 1154px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header__nav-list {
+  display: flex;
+}
+.header__nav-list-item:not(:last-child) {
+  margin-right: 35px;
+}
+.header__nav-item-link {
+  font-family: "Inter", sans-serif;
+  font-weight: var(--fw-500);
+  font-size: var(--text-16);
+  line-height: var(--lh-19);
+  color: var(--white);
+  opacity: 0.94;
+}
+.btn {
+  font-family: "Inter", sans-serif;
+  font-weight: var(--fw-500);
+  font-size: var(--text-15);
+  line-height: var(--lh-18);
+  text-align: center;
+  color: var(--white-100);
+}
+.btn--type-demon {
+  max-width: 154px;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.2);
+  -webkit-backdrop-filter: blur(35px);
+          backdrop-filter: blur(35px);
+  border-radius: 21px;
+  padding: 12px 0px;
+}
+.btn--type-demo {
+  max-width: 202px;
+  width: 100%;
+  padding: 12px 0px;
+  background: var(--gray-900);
+  border-radius: 26px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo {
+  font-family: "Lekton", sans-serif;
+  font-weight: var(--fw-700);
+  font-size: var(--text-35);
+  line-height: 35px;
+}
+.logo--color-white {
+  color: var(--white);
 }
