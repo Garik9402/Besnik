@@ -6,7 +6,10 @@
   // @include mq(lg) {}
   // @include mq(md) {}
   // @include mq(sm) {}
-  .wrapper-content {}
+  .wrapper-content {
+     overflow-x: hidden;
+     min-height: 100vh;
+  }
 
   .hero {
      padding-top: 25px;
@@ -41,6 +44,7 @@
      &__desc {
         max-width: 569px;
         width: 100%;
+        align-self: flex-end;
      }
 
      &__title {
@@ -79,10 +83,19 @@
      &__user-blocks {
         position: absolute;
         top: 0;
-        right: 0;
+        //   right: -20%;
+        right: calc(-40% - (20 - 40) *((100% - 776px) /(1444 - 776)));
      }
 
-     &__user {
+
+  }
+
+  .user {
+     display: grid;
+     grid-template-columns: 1fr 1fr;
+     grid-column-gap: 22px;
+
+     &__main-block {
         position: relative;
         max-width: 188px;
         width: 100%;
@@ -93,13 +106,13 @@
         margin-bottom: 24px;
      }
 
-     &__user-img {
+     &__img {
         position: absolute;
         right: -20px;
         top: -15px;
      }
 
-     &__user-title {
+     &__title {
         font-family: 'Inter', sans-serif;
         font-weight: var(--fw-600);
         font-size: var(--text-20);
@@ -109,7 +122,7 @@
         margin-bottom: 27px;
      }
 
-     &__user-content {
+     &__content {
         max-width: 155px;
         width: 100%;
         background: var(--white);
@@ -120,7 +133,7 @@
         align-items: center;
      }
 
-     &__user-content-title {
+     &__content-title {
         font-family: 'Inter', sans-serif;
         font-weight: var(--fw-500);
         font-size: var(--text-14);
@@ -129,7 +142,7 @@
         margin-bottom: 5px;
      }
 
-     &__user-content-amount {
+     &__content-amount {
         font-family: 'Inter', sans-serif;
         font-weight: var(--fw-700);
         font-size: var(--text-30);
@@ -137,7 +150,7 @@
         color: var(--red-300);
      }
 
-     &__user-followwers {
+     &__followwers {
         width: 306px;
         display: flex;
         align-items: center;
@@ -148,16 +161,17 @@
         border-radius: 8px;
      }
 
-     &__user-followwers-top {
+
+     &__followwers-top {
         margin-bottom: 19px;
+
      }
 
-     &__user-followwers-control {}
+     &__followwers-control {}
 
+     &__followwers-amount-box {}
 
-     &__user-followwers-amount-box {}
-
-     &__user-followwers-amount {
+     &__followwers-amount {
         font-family: 'Inter';
         font-weight: var(--fw-500);
         font-size: var(--text-14);
@@ -165,7 +179,7 @@
         color: #666666FF;
      }
 
-     &__user-followwers-amount-num {
+     &__followwers-amount-num {
         font-weight: var(--fw-600);
         font-size: var(--text-22);
         line-height: var(--lh-27);
@@ -173,24 +187,24 @@
         margin-right: 10px;
      }
 
-     &__user-followwers-content {
+     &__followwers-content {
         width: 100%;
         position: relative;
         padding: 0px 27.68px 0px 19.64px;
 
      }
 
-     &__user-followwers-progress-block {
+     &__followwers-progress-block {
         position: relative;
+
      }
 
-
-
-     &__user-followwers-measurements-list {
+     &__followwers-measurements-list {
         width: 100%;
+
      }
 
-     &__user-followwers-measurements-list-item {
+     &__followwers-measurements-list-item {
         position: relative;
         font-family: 'Inter';
         font-weight: var(--fw-500);
@@ -218,8 +232,7 @@
         }
      }
 
-
-     &__user-followwers-progress-bars {
+     &__followwers-progress-bars {
         position: absolute;
         width: 100%;
         height: 100%;
@@ -229,7 +242,7 @@
         padding: 0px 36.61px 0px 56.25px;
      }
 
-     &__user-followwers-progress-bar-w {
+     &__followwers-progress-bar-w {
         height: 100%;
         width: 6.25px;
         display: flex;
@@ -238,10 +251,9 @@
         &:not(:last-child) {
            margin-right: 19.65px
         }
-
      }
 
-     &__user-followwers-progress-bar {
+     &__followwers-progress-bar {
         width: 100%;
         background-color: var(--blue-700);
         border-radius: 10px 10px 0px 0px;
@@ -283,7 +295,83 @@
         }
      }
 
+
+     &__media-type {
+        max-width: 309px;
+        width: 100%;
+        padding: 32px 23px 55px;
+        background: var(--white);
+        box-shadow: 0px 28px 60px -12px rgba(0, 0, 0, 0.05);
+        border-radius: 8px;
+     }
+
+     &__media-type-top {
+        margin-bottom: 30px;
+     }
+
+     &__media-type-control {}
+
+     &__media-type-content {
+        display: flex;
+        justify-content: center;
+     }
+
+     &__media-type-progress-bar {
+        position: relative;
+        width: 125px;
+     }
+
+     &__media-type-progress-svg {
+        position: absolute;
+        top: -28px;
+        left: -58px;
+        width: 220px;
+        height: 271px;
+     }
+
+     &__media-type-progress-bar-line {
+        border: 15.3149px solid #F5F5F5;
+        border-radius: 50%;
+        width: 147px;
+        height: 147px;
+        left: 0;
+     }
+
+     &__media-type-info-box {
+        position: absolute;
+        top: 0;
+        width: 153px;
+        background: #293134;
+        border-radius: 6px;
+        top: 50%;
+        transform: translateY(-50%);
+        left: -66px;
+
+        &:before {
+           content: '';
+           position: absolute;
+           border-top: 7px solid #293134;
+           border-right: 7px solid transparent;
+           border-left: 7px solid transparent;
+           left: 50%;
+           transform: translateX(-50%);
+           bottom: -6px;
+
+        }
+     }
+
+     &__media-type-info-text {
+        font-family: 'Inter', sans-serif;
+        font-weight: var(--fw-500);
+        font-size: var(--text-12);
+        line-height: var(--lh-16);
+        letter-spacing: -0.01em;
+        color: var(--white);
+        text-align: center;
+     }
+
   }
+
 
   .user-control {
      width: 259px;

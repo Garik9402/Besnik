@@ -106,6 +106,11 @@
   src: url("../fonts/lekton-v17-latin-700.eot?#iefix") format("embedded-opentype"), url("../fonts/lekton-v17-latin-700.woff2") format("woff2"), url("../fonts/lekton-v17-latin-700.woff") format("woff"), url("../fonts/lekton-v17-latin-700.ttf") format("truetype"), url("../fonts/lekton-v17-latin-700.svg#Lekton") format("svg");
   /* Legacy iOS */
 }
+.wrapper-content {
+  overflow-x: hidden;
+  min-height: 100vh;
+}
+
 .hero {
   padding-top: 25px;
   position: relative;
@@ -132,6 +137,7 @@
 .hero__desc {
   max-width: 569px;
   width: 100%;
+  align-self: flex-end;
 }
 .hero__title {
   font-family: "Poppins", sans-serif;
@@ -163,9 +169,15 @@
 .hero__user-blocks {
   position: absolute;
   top: 0;
-  right: 0;
+  right: calc(-40% - -20 * (100% - 776px) / 668);
 }
-.hero__user {
+
+.user {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 22px;
+}
+.user__main-block {
   position: relative;
   max-width: 188px;
   width: 100%;
@@ -176,12 +188,12 @@
   padding: 31px 16px 17px;
   margin-bottom: 24px;
 }
-.hero__user-img {
+.user__img {
   position: absolute;
   right: -20px;
   top: -15px;
 }
-.hero__user-title {
+.user__title {
   font-family: "Inter", sans-serif;
   font-weight: var(--fw-600);
   font-size: var(--text-20);
@@ -190,7 +202,7 @@
   color: var(--white);
   margin-bottom: 27px;
 }
-.hero__user-content {
+.user__content {
   max-width: 155px;
   width: 100%;
   background: var(--white);
@@ -200,7 +212,7 @@
   flex-direction: column;
   align-items: center;
 }
-.hero__user-content-title {
+.user__content-title {
   font-family: "Inter", sans-serif;
   font-weight: var(--fw-500);
   font-size: var(--text-14);
@@ -208,14 +220,14 @@
   color: var(--brown-300);
   margin-bottom: 5px;
 }
-.hero__user-content-amount {
+.user__content-amount {
   font-family: "Inter", sans-serif;
   font-weight: var(--fw-700);
   font-size: var(--text-30);
   line-height: var(--lh-36);
   color: var(--red-300);
 }
-.hero__user-followwers {
+.user__followwers {
   width: 306px;
   display: flex;
   align-items: center;
@@ -225,35 +237,35 @@
   box-shadow: 0px 40px 70px -18px rgba(0, 0, 0, 0.1);
   border-radius: 8px;
 }
-.hero__user-followwers-top {
+.user__followwers-top {
   margin-bottom: 19px;
 }
-.hero__user-followwers-amount {
+.user__followwers-amount {
   font-family: "Inter";
   font-weight: var(--fw-500);
   font-size: var(--text-14);
   line-height: var(--lh-22);
   color: #666666;
 }
-.hero__user-followwers-amount-num {
+.user__followwers-amount-num {
   font-weight: var(--fw-600);
   font-size: var(--text-22);
   line-height: var(--lh-27);
   color: var(--black-100);
   margin-right: 10px;
 }
-.hero__user-followwers-content {
+.user__followwers-content {
   width: 100%;
   position: relative;
   padding: 0px 27.68px 0px 19.64px;
 }
-.hero__user-followwers-progress-block {
+.user__followwers-progress-block {
   position: relative;
 }
-.hero__user-followwers-measurements-list {
+.user__followwers-measurements-list {
   width: 100%;
 }
-.hero__user-followwers-measurements-list-item {
+.user__followwers-measurements-list-item {
   position: relative;
   font-family: "Inter";
   font-weight: var(--fw-500);
@@ -266,7 +278,7 @@
   line-height: 12px;
   color: #333333;
 }
-.hero__user-followwers-measurements-list-item::after {
+.user__followwers-measurements-list-item::after {
   content: "";
   position: absolute;
   width: 100%;
@@ -275,10 +287,10 @@
   left: 23px;
   bottom: 2px;
 }
-.hero__user-followwers-measurements-list-item:not(:last-child) {
+.user__followwers-measurements-list-item:not(:last-child) {
   margin-bottom: 44px;
 }
-.hero__user-followwers-progress-bars {
+.user__followwers-progress-bars {
   position: absolute;
   width: 100%;
   height: 100%;
@@ -287,46 +299,108 @@
   display: flex;
   padding: 0px 36.61px 0px 56.25px;
 }
-.hero__user-followwers-progress-bar-w {
+.user__followwers-progress-bar-w {
   height: 100%;
   width: 6.25px;
   display: flex;
   align-items: flex-end;
 }
-.hero__user-followwers-progress-bar-w:not(:last-child) {
+.user__followwers-progress-bar-w:not(:last-child) {
   margin-right: 19.65px;
 }
-.hero__user-followwers-progress-bar {
+.user__followwers-progress-bar {
   width: 100%;
   background-color: var(--blue-700);
   border-radius: 10px 10px 0px 0px;
 }
-.hero__user-followwers-progress-bar--first {
+.user__followwers-progress-bar--first {
   height: 43%;
 }
-.hero__user-followwers-progress-bar--second {
+.user__followwers-progress-bar--second {
   height: 25%;
 }
-.hero__user-followwers-progress-bar--third {
+.user__followwers-progress-bar--third {
   height: 85%;
 }
-.hero__user-followwers-progress-bar--fourth {
+.user__followwers-progress-bar--fourth {
   height: 38%;
 }
-.hero__user-followwers-progress-bar--fifth {
+.user__followwers-progress-bar--fifth {
   height: 43%;
 }
-.hero__user-followwers-progress-bar--sixth {
+.user__followwers-progress-bar--sixth {
   height: 62%;
 }
-.hero__user-followwers-progress-bar--seventh {
+.user__followwers-progress-bar--seventh {
   height: 70%;
 }
-.hero__user-followwers-progress-bar--eighth {
+.user__followwers-progress-bar--eighth {
   height: 40%;
 }
-.hero__user-followwers-progress-bar--ninth {
+.user__followwers-progress-bar--ninth {
   height: 85%;
+}
+.user__media-type {
+  max-width: 309px;
+  width: 100%;
+  padding: 32px 23px 55px;
+  background: var(--white);
+  box-shadow: 0px 28px 60px -12px rgba(0, 0, 0, 0.05);
+  border-radius: 8px;
+}
+.user__media-type-top {
+  margin-bottom: 30px;
+}
+.user__media-type-content {
+  display: flex;
+  justify-content: center;
+}
+.user__media-type-progress-bar {
+  position: relative;
+  width: 125px;
+}
+.user__media-type-progress-svg {
+  position: absolute;
+  top: -28px;
+  left: -58px;
+  width: 220px;
+  height: 271px;
+}
+.user__media-type-progress-bar-line {
+  border: 15.3149px solid #F5F5F5;
+  border-radius: 50%;
+  width: 147px;
+  height: 147px;
+  left: 0;
+}
+.user__media-type-info-box {
+  position: absolute;
+  top: 0;
+  width: 153px;
+  background: #293134;
+  border-radius: 6px;
+  top: 50%;
+  transform: translateY(-50%);
+  left: -66px;
+}
+.user__media-type-info-box:before {
+  content: "";
+  position: absolute;
+  border-top: 7px solid #293134;
+  border-right: 7px solid transparent;
+  border-left: 7px solid transparent;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -6px;
+}
+.user__media-type-info-text {
+  font-family: "Inter", sans-serif;
+  font-weight: var(--fw-500);
+  font-size: var(--text-12);
+  line-height: var(--lh-16);
+  letter-spacing: -0.01em;
+  color: var(--white);
+  text-align: center;
 }
 
 .user-control {
