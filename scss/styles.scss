@@ -25,19 +25,22 @@
      }
 
      &__content-body {
-        position: relative;
         max-width: 1154px;
         width: 100%;
         margin: 0 auto;
         padding: 0 20px;
      }
 
+     &__content-blocks {
+        position: relative;
+        height: 598px;
+        display: flex;
+        align-items: flex-end;
+     }
 
      &__desc {
-        position: relative;
         max-width: 569px;
         width: 100%;
-        bottom: -215px;
      }
 
      &__title {
@@ -73,13 +76,13 @@
         margin-left: 16px;
      }
 
-     &__user-cards {
+     &__user-blocks {
         position: absolute;
         top: 0;
         right: 0;
      }
 
-     &__user-card {
+     &__user {
         position: relative;
         max-width: 188px;
         width: 100%;
@@ -87,6 +90,7 @@
         backdrop-filter: blur(40px);
         border-radius: 8px;
         padding: 31px 16px 17px;
+        margin-bottom: 24px;
      }
 
      &__user-img {
@@ -95,7 +99,7 @@
         top: -15px;
      }
 
-     &__user-card-title {
+     &__user-title {
         font-family: 'Inter', sans-serif;
         font-weight: var(--fw-600);
         font-size: var(--text-20);
@@ -131,6 +135,188 @@
         font-size: var(--text-30);
         line-height: var(--lh-36);
         color: var(--red-300);
+     }
+
+     &__user-followwers {
+        width: 306px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        padding: 34px 0px 47px;
+        background-color: var(--white);
+        box-shadow: 0px 40px 70px -18px rgba(0, 0, 0, 0.1);
+        border-radius: 8px;
+     }
+
+     &__user-followwers-top {
+        margin-bottom: 19px;
+     }
+
+     &__user-followwers-control {}
+
+
+     &__user-followwers-amount-box {}
+
+     &__user-followwers-amount {
+        font-family: 'Inter';
+        font-weight: var(--fw-500);
+        font-size: var(--text-14);
+        line-height: var(--lh-22);
+        color: #666666FF;
+     }
+
+     &__user-followwers-amount-num {
+        font-weight: var(--fw-600);
+        font-size: var(--text-22);
+        line-height: var(--lh-27);
+        color: var(--black-100);
+        margin-right: 10px;
+     }
+
+     &__user-followwers-content {
+        width: 100%;
+        position: relative;
+        padding: 0px 27.68px 0px 19.64px;
+
+     }
+
+     &__user-followwers-progress-block {
+        position: relative;
+     }
+
+
+
+     &__user-followwers-measurements-list {
+        width: 100%;
+     }
+
+     &__user-followwers-measurements-list-item {
+        position: relative;
+        font-family: 'Inter';
+        font-weight: var(--fw-500);
+        font-size: var(--text-10);
+        line-height: var(--lh-12);
+        color: var(--black-100);
+        font-style: normal;
+        font-weight: 500;
+        font-size: 10px;
+        line-height: 12px;
+        color: #333333;
+
+        &::after {
+           content: '';
+           position: absolute;
+           width: 100%;
+           height: 1px;
+           background: #EEF0F2;
+           left: 23px;
+           bottom: 2px;
+        }
+
+        &:not(:last-child) {
+           margin-bottom: 44px;
+        }
+     }
+
+
+     &__user-followwers-progress-bars {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        bottom: 2px;
+        left: 0;
+        display: flex;
+        padding: 0px 36.61px 0px 56.25px;
+     }
+
+     &__user-followwers-progress-bar-w {
+        height: 100%;
+        width: 6.25px;
+        display: flex;
+        align-items: flex-end;
+
+        &:not(:last-child) {
+           margin-right: 19.65px
+        }
+
+     }
+
+     &__user-followwers-progress-bar {
+        width: 100%;
+        background-color: var(--blue-700);
+        border-radius: 10px 10px 0px 0px;
+
+        &--first {
+           height: 43%;
+        }
+
+        &--second {
+           height: 25%;
+        }
+
+        &--third {
+           height: 85%;
+        }
+
+        &--fourth {
+           height: 38%;
+        }
+
+        &--fifth {
+           height: 43%;
+        }
+
+        &--sixth {
+           height: 62%;
+        }
+
+        &--seventh {
+           height: 70%;
+        }
+
+        &--eighth {
+           height: 40%;
+        }
+
+        &--ninth {
+           height: 85%;
+        }
+     }
+
+  }
+
+  .user-control {
+     width: 259px;
+     display: flex;
+     justify-content: space-between;
+
+     &__start-box {
+        display: flex;
+        align-items: center;
+     }
+
+     &__socicon {
+        width: 18px;
+        height: 18px;
+        margin-right: 10px;
+     }
+
+     &__title {}
+
+     &__btn-box {
+        display: flex;
+        align-items: center;
+     }
+
+     &__btn {
+        width: 35px;
+        height: 35px;
+        display: block;
+        background-color: transparent;
+
+        &:not(:last-child) {
+           margin-right: 6px;
+        }
      }
   }
 
