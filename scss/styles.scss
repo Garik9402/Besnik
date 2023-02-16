@@ -647,12 +647,21 @@
         width: 100%;
         display: flex;
         justify-content: center;
+        margin-bottom: 70px;
+     }
+
+     &__content-middle {
+        margin-bottom: 85px;
      }
 
      &__content-block {
         display: flex;
         justify-content: space-between;
         align-items: center;
+
+        &:not(:last-child) {
+           margin-bottom: 69px;
+        }
 
         &--top {
            max-width: 721px;
@@ -663,6 +672,12 @@
            width: 100%;
            display: flex;
            flex-direction: row-reverse;
+        }
+
+        &--bottom {
+           max-width: 720px;
+           display: flex;
+           align-items: flex-end;
         }
      }
 
@@ -697,6 +712,10 @@
      &__desc {
         max-width: 352px;
         width: 100%;
+
+        &--padding-bottom {
+           padding-bottom: 17px;
+        }
      }
 
      &__overhead {
@@ -854,9 +873,16 @@
      }
 
      &__progress {
+        position: relative;
         max-width: 268px;
         width: 100%;
         padding: 30px 40.49px 24.37px 40.08px;
+        background: var(--white);
+        box-shadow: -8px 30px 80px -25px rgba(82, 82, 82, 0.1);
+        border-radius: 8px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
      }
 
      &__progress-title {
@@ -868,12 +894,34 @@
         margin-bottom: 26.31px;
      }
 
+     &__progress-price-box {
+        position: absolute;
+        background: var(--white);
+        box-shadow: 10px 20px 30px rgba(0, 0, 0, 0.04);
+        border-radius: 4px;
+        padding: 8px 10px;
+        z-index: 1;
+        top: 32%;
+        left: 8%;
+     }
+
+     &__progress-price {
+        font-weight: var(--fw-600);
+        font-size: var(--text-14);
+        line-height: var(--lh-17);
+        text-align: center;
+        color: #6A35FF;
+     }
+
      &__progress-bars {
         position: relative;
+        display: block;
+        margin-bottom: 27px;
+
      }
 
      &__progress-line {
-        position: absolute;
+        position: relative;
         border: 5.93856px solid #F0F3F9;
         border-radius: 50%;
         background-color: transparent;
@@ -883,24 +931,87 @@
            height: 161.08px;
         }
 
+        &--big svg {
+           position: absolute;
+           top: -6px;
+           left: -7px;
+        }
+
         &--middle {
            width: 110.61px;
            height: 110.61px;
+           top: 50%;
+           left: 50%;
+           transform: translate(-50%, -50%);
+        }
+
+        &--middle svg {
+           position: absolute;
+           top: -8px;
+           left: 9px;
 
         }
 
+        &--small {
+           width: 60px;
+           height: 60px;
+           top: 50%;
+           left: 50%;
+           transform: translate(-50%, -50%);
+        }
+
+        &--small svg {
+           position: absolute;
+           top: -6px;
+           left: 21px;
+
+        }
      }
 
-     &__progress-bar {
-        position: absolute;
-        border-radius: inherit;
-        top: -6px;
-        left: -7px;
+     &__progress-bar {}
+
+     &__progress-socials-list {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
      }
 
-     &__progress-socials-list {}
+     &__progress-socials-list-item {
+        position: relative;
+        font-weight: var(--fw-400);
+        font-size: var(--text-10);
+        line-height: var(--lh-12);
+        letter-spacing: 0.01em;
+        color: #7C89A9;
+        padding-left: 10px;
 
-     &__progress-socials-list-item {}
+
+        &::before {
+           content: '';
+           position: absolute;
+           width: 7px;
+           height: 7px;
+           border-radius: 50%;
+           left: 0;
+           top: 43%;
+           transform: translateY(-50%);
+
+        }
+
+        &:first-child::before {
+           background-color: #703FFB;
+        }
+
+        &:nth-child(2)::before {
+           background-color: #DE287A;
+        }
+
+        &:last-child::before {
+           background-color: #FCAE56;
+        }
+     }
+
+
   }
 
   .btn-learn-more {
@@ -914,6 +1025,7 @@
         line-height: var(--lh-18);
         text-align: center;
         margin-right: 12px;
+
      }
 
      &__icon {}
