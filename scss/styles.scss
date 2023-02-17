@@ -1208,3 +1208,100 @@
 
      &__block-card-link {}
   }
+
+  .happy-clients {
+     padding: 70px 0px 101px 0px;
+
+     &__inner {
+        max-width: 1016px;
+        width: 100%;
+        padding: 0 20px;
+        margin: 0 auto;
+     }
+
+     &__top {
+        margin: 0 auto 69px;
+     }
+
+     &__content {
+        display: flex;
+        justify-content: space-between
+     }
+
+     &__desc {
+        max-width: 477px;
+        width: 100%;
+     }
+
+     &__icon-link {
+        position: relative;
+        display: inline-block;
+        width: 64px;
+        height: 64px;
+        overflow: hidden;
+        margin-bottom: 40px;
+     }
+
+     &__icon {
+        position: absolute;
+        top: -25px;
+        left: -29px;
+     }
+
+     &__desc-text {
+        font-style: italic;
+        font-weight: var(--fw-500);
+        font-size: var(--text-22);
+        line-height: var(--lh-36);
+        color: #6D6D6D;
+        margin-bottom: 55px;
+     }
+
+     &__desc-bottom {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+
+     }
+
+     &__desc-client {}
+
+     &__desc-client-name {
+        font-family: 'Lato', sans-serif;
+        font-weight: var(--fw-700);
+        font-size: var(--text-25);
+        line-height: var(--lh-30);
+        margin-bottom: 12px;
+        color: #1C1C1D;
+     }
+
+     &__desc-client-sphere {
+        font-weight: var(--fw-500);
+        font-size: var(--text-16);
+        line-height: var(--lh-19);
+        color: #9C988F;
+     }
+
+     &__desc-arrow-btns {
+        display: flex;
+     }
+
+     &__desc-arrow-btn {
+        width: 29px;
+        height: 29px;
+        border-radius: 2px;
+        background-color: var(--white);
+        border: 1px solid #000;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        &:not(:last-child) {
+           margin-right: 17px;
+        }
+     }
+
+     &__img-w {}
+
+     &__img {}
+  }
