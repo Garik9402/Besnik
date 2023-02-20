@@ -90,6 +90,9 @@
         top: 0;
         right: -25%;
 
+        @media (max-width:1082px) {
+           display: none;
+        }
      }
 
 
@@ -314,7 +317,7 @@
         background: var(--white);
         box-shadow: 0px 28px 60px -12px rgba(0, 0, 0, 0.05);
         border-radius: 8px;
-        margin-top: 20px;
+        margin: 20px 0 25px;
         align-self: flex-start;
      }
 
@@ -387,11 +390,16 @@
 
      &__follower-growth {
         width: 380px;
+        align-self: flex-end;
+
+     }
+
+     &__follower-growth-top {
         padding: 20px 24px 20px 20px;
-        align-self: center;
         background: var(--white);
         border: 1.5px solid #EEF0F2;
         border-radius: 8px;
+        margin-bottom: 25px;
      }
 
      &__follower-growth-desc {
@@ -442,6 +450,16 @@
            margin-bottom: 8px;
         }
      }
+
+     &__follower-growth-emoticons {
+        max-width: 200px;
+        width: 100%;
+        padding: 20px 24px;
+        display: flex;
+        justify-content: space-between;
+     }
+
+     &__follower-growth-emoticons-img {}
 
   }
 
@@ -495,22 +513,37 @@
         align-items: center;
      }
 
-     &__menu {}
+     &__end-items {
+        display: flex;
+     }
 
-     &__nav-list {}
+     &__profile {
+        display: none;
+     }
 
-     &__nav-list-item {}
-
-     &__nav-item-link {}
-
-     &__btn {}
+     @media (max-width:1082px) {
+        &__profile {
+           width: 40px;
+           height: 40px;
+           border-radius: 50%;
+           background-color: #4861DC;
+           font-weight: var(--fw-500);
+           font-size: var(--text-20);
+           line-height: var(--lh-18);
+           display: flex;
+           align-items: center;
+           justify-content: center;
+           color: var(--white-100);
+           cursor: pointer;
+           margin-right: 15px;
+        }
+     }
   }
 
 
 
 
   .btn {
-     font-family: 'Inter', sans-serif;
      font-weight: var(--fw-500);
      font-size: var(--text-15);
      line-height: var(--lh-18);
@@ -520,8 +553,7 @@
 
 
      &--type-demon {
-        max-width: 154px;
-        width: 100%;
+        width: 154px;
         background: rgba(255, 255, 255, 0.2);
         backdrop-filter: blur(35px);
         border-radius: 21px;
@@ -1342,6 +1374,9 @@
         width: 100%;
         padding: 51px 0 65px;
         border-radius: 20px;
+        background-image: url(../images/hero-background.png);
+        background-repeat: no-repeat;
+        background-size: cover;
         display: flex;
         justify-content: center;
 

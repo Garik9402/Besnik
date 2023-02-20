@@ -200,6 +200,11 @@
   top: 0;
   right: -25%;
 }
+@media (max-width: 1082px) {
+  .hero__user-blocks {
+    display: none;
+  }
+}
 
 .user {
   display: grid;
@@ -381,7 +386,7 @@
   background: var(--white);
   box-shadow: 0px 28px 60px -12px rgba(0, 0, 0, 0.05);
   border-radius: 8px;
-  margin-top: 20px;
+  margin: 20px 0 25px;
   align-self: flex-start;
 }
 .user__media-type-top {
@@ -441,11 +446,14 @@
 }
 .user__follower-growth {
   width: 380px;
+  align-self: flex-end;
+}
+.user__follower-growth-top {
   padding: 20px 24px 20px 20px;
-  align-self: center;
   background: var(--white);
   border: 1.5px solid #EEF0F2;
   border-radius: 8px;
+  margin-bottom: 25px;
 }
 .user__follower-growth-desc {
   display: flex;
@@ -488,7 +496,13 @@
 .user__follower-growth-line:not(:last-child) {
   margin-bottom: 8px;
 }
-
+.user__follower-growth-emoticons {
+  max-width: 200px;
+  width: 100%;
+  padding: 20px 24px;
+  display: flex;
+  justify-content: space-between;
+}
 .user-control {
   width: 259px;
   display: flex;
@@ -526,8 +540,31 @@
   justify-content: space-between;
   align-items: center;
 }
+.header__end-items {
+  display: flex;
+}
+.header__profile {
+  display: none;
+}
+@media (max-width: 1082px) {
+  .header__profile {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #4861DC;
+    font-weight: var(--fw-500);
+    font-size: var(--text-20);
+    line-height: var(--lh-18);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--white-100);
+    cursor: pointer;
+    margin-right: 15px;
+  }
+}
+
 .btn {
-  font-family: "Inter", sans-serif;
   font-weight: var(--fw-500);
   font-size: var(--text-15);
   line-height: var(--lh-18);
@@ -536,8 +573,7 @@
   background: var(--gray-900);
 }
 .btn--type-demon {
-  max-width: 154px;
-  width: 100%;
+  width: 154px;
   background: rgba(255, 255, 255, 0.2);
   -webkit-backdrop-filter: blur(35px);
           backdrop-filter: blur(35px);
@@ -1184,6 +1220,9 @@
   width: 100%;
   padding: 51px 0 65px;
   border-radius: 20px;
+  background-image: url(../images/hero-background.png);
+  background-repeat: no-repeat;
+  background-size: cover;
   display: flex;
   justify-content: center;
 }
