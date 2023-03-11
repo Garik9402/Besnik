@@ -74,6 +74,9 @@
    --emerald-500: #32766a;
    /* font-size */
    --text-94: 94px;
+   --text-80: 80px;
+   --text-68: 68px;
+   --text-60: 60px;
    --text-40: 40px;
    --text-36: 36px;
    --text-35: 35px;
@@ -94,6 +97,7 @@
    --text-9: 9px;
    /* line-height */
    --lh-108: 108px;
+   --lh-85: 85px;
    --lh-60: 60px;
    --lh-50: 50px;
    --lh-48: 48px;

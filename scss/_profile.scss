@@ -1,0 +1,239 @@
+.profile {
+   position: absolute;
+   max-width: 450px;
+   width: 0;
+   height: 100%;
+   top: 0;
+   right: -100%;
+   opacity: 0;
+   overflow-y: scroll;
+   background-color: #DC90A7;
+   transition: all 0.4s ease-in;
+   z-index: 10;
+   padding-top: 20px;
+   visibility: hidden;
+
+   &::-webkit-scrollbar {
+      display: none;
+   }
+
+   &.active {
+      width: 100%;
+      right: 0;
+      display: block;
+      visibility: visible;
+      opacity: 1;
+      transition: all 0.4s ease;
+   }
+
+   &__close-btn {
+      position: absolute;
+      top: 10px;
+      left: 6px;
+      z-index: 21;
+      background-color: transparent;
+   }
+
+   &__close-btn-icon {
+      width: 30px;
+      height: 30px;
+      color: brown;
+   }
+
+   &__inner {
+      width: 100%;
+      padding: 40px 10px;
+
+   }
+
+   &__top {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+
+
+   }
+
+   &__username {
+      font-weight: var(--fw-500);
+      font-size: var(--text-16);
+      line-height: var(--lh-14);
+      color: #79432F;
+   }
+
+   &__exit {}
+
+
+   &__exit-btn {
+      background-color: transparent;
+   }
+
+   &__exit-icon {
+      width: 25px;
+      height: 25px;
+
+   }
+
+   &__content {
+      width: 100%;
+      padding: 30px 0px;
+   }
+
+   & .user {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      & .user-control {
+         width: 100%;
+      }
+
+      &__main-block {
+         max-width: 100%;
+         margin: 0;
+      }
+
+      &__img {
+         right: 0px;
+      }
+
+      &__content {
+         max-width: 100%;
+      }
+
+      &__media-type {
+         max-width: 100%;
+      }
+
+
+      &__followwers {
+         width: 100%;
+         margin-bottom: 15px;
+      }
+
+      &__follower-growth {
+         width: 100%;
+      }
+
+
+
+      &__follower-growth-emoticons {
+         background: var(--white);
+         box-shadow: 0px 35px 80px -14px rgba(0, 0, 0, 0.08);
+         border-radius: 8px;
+      }
+
+      &__followwers-top {
+         width: 100%;
+         padding: 0 23px;
+      }
+
+   }
+}
+
+// .user {
+
+//    & {}
+
+//    &__img {}
+
+//    &__title {}
+
+
+
+//    &__content-title {}
+
+//    &__content-amount {}
+
+
+
+
+
+//    &__media-type-content {}
+
+//    &__media-type-progress-bar {}
+
+//    &__media-type-progress-bar-line {}
+
+//    &__media-type-progress-svg {}
+
+//    &__media-type-info-box {}
+
+//    &__media-type-info-text {}
+
+
+//    &__followwers-top {}
+
+//    &__followwers-control {}
+
+//    &__followwers-amount-box {}
+
+//    &__followwers-amount {}
+
+//    &__followwers-amount-num {}
+
+//    &__followwers-content {}
+
+//    &__followwers-progress-block {}
+
+//    &__followwers-measurements-list {}
+
+//    &__followwers-measurements-list-item {}
+
+//    &__followwers-progress-bars {}
+
+//    &__followwers-progress-bar-w {}
+
+//    &__followwers-progress-bar {}
+
+//    &__followwers-progress-bar--first {}
+
+//    &__followwers-progress-bar--second {}
+
+//    &__followwers-progress-bar--third {}
+
+//    &__followwers-progress-bar--fourth {}
+
+//    &__followwers-progress-bar--fifth {}
+
+//    &__followwers-progress-bar--sixth {}
+
+//    &__followwers-progress-bar--seventh {}
+
+//    &__followwers-progress-bar--eighth {}
+
+//    &__followwers-progress-bar--ninth {}
+
+
+//    &__follower-growth-top {}
+
+//    &__follower-growth-desc {}
+
+//    &__follower-growth-amount-box {}
+
+//    &__follower-growth-amount {}
+
+//    &__follower-growth-desc-content {}
+
+//    &__follower-growth-title {}
+
+//    &__follower-growth-line {}
+
+//    &__follower-growth-emoticons {}
+
+//    &__follower-growth-emoticons-img {}
+// }
+
+// .user-control {
+
+//    &__start-box {}
+
+//    &__socicon {}
+
+//    &__title {}
+
+//    &__btn-box {}
+
+//    &__btn {}
+// }
