@@ -5,19 +5,7 @@ $(document).ready(function () {
       dots: false,
       slidesToShow: 1,
       speed: 1000,
-      // autoplay: true,
+      autoplay: true,
       slidesToScroll: 1,
-      // responsive: [{
-
-      // },
-      // },
-      // {
-      //    breakpoint: 800,
-      //    settings: {
-      //       slidesToShow: 1,
-      //       slidesToScroll: 1,
-      //    },
-      // },
-      // ],
    });
 });
