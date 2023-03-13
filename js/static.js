@@ -6,10 +6,11 @@ const btnCloseProf = document.querySelector('.profile__close-btn')
 window.addEventListener('click', (e) => {
    if (profileCircle.contains(e.target) || profileNode.contains(e.target)) {
       overlayProfile.classList.add('active')
-      document.body.classList.add('hidden')
+      document.body.style.overflow = 'hidden'
       if (btnCloseProf.contains(e.target)) {
          overlayProfile.classList.remove('active')
-         document.body.classList.remove('hidden')
+         document.body.style.overflow = 'visible'
+
       }
    }
 })
@@ -17,7 +18,7 @@ window.addEventListener('click', (e) => {
 overlayProfile.addEventListener('click', (e) => {
    if (e.target === overlayProfile) {
       overlayProfile.classList.remove('active')
-      document.body.classList.remove('hidden')
+      document.body.style.overflow = 'visible'
    }
 })
 
