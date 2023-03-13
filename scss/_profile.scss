@@ -1,3 +1,28 @@
+.profile-overlay {
+   position: fixed;
+   top: 0;
+   left: 0;
+   bottom: 0;
+   right: 0;
+   background: rgba(26, 26, 37, 0.7);
+   opacity: 0;
+   visibility: hidden;
+
+   &.active {
+      opacity: 1;
+      visibility: visible;
+   }
+
+   &.active .profile {
+      width: 100%;
+      right: 0;
+      display: block;
+      visibility: visible;
+      opacity: 1;
+      transition: all 0.4s ease;
+   }
+}
+
 .profile {
    position: absolute;
    max-width: 450px;
@@ -17,14 +42,7 @@
       display: none;
    }
 
-   &.active {
-      width: 100%;
-      right: 0;
-      display: block;
-      visibility: visible;
-      opacity: 1;
-      transition: all 0.4s ease;
-   }
+
 
    &__close-btn {
       position: absolute;

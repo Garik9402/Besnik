@@ -2,12 +2,13 @@ const burgerNode = document.querySelector('.header__burger')
 const swipeBtn = document.querySelector('.swipe-btn')
 const overlayMenu = document.querySelector('.mob-menu')
 const menuItem = document.querySelectorAll('.menu-item')
-burgerNode.addEventListener('click', openModal)
+burgerNode.addEventListener('click', (e) => {
+   if (e.target === burgerNode) {
+      overlayMenu.classList.add('active')
+      document.body.style.overflow = 'hidden'
+   }
+})
 
-function openModal() {
-   overlayMenu.classList.add('active')
-   document.body.style.overflow = 'hidden'
-}
 
 overlayMenu.addEventListener('click', (e) => {
    if (e.target === overlayMenu) {

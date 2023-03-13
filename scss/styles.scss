@@ -8,6 +8,12 @@
   // @include mq(lg) {}
   // @include mq(md) {}
   // @include mq(sm) {}
+  body {
+     &.hidden {
+        overflow: hidden;
+     }
+  }
+
   .wrapper-content {
      position: relative;
      overflow-x: hidden;
